@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6B7587371E4A06D000F63825 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B7587361E4A06D000F63825 /* AVFoundation.framework */; };
+		6B7587391E4A08A100F63825 /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 6B7587381E4A08A100F63825 /* tessdata */; };
 		6B8E5F121E48CEFF00491A65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8E5F111E48CEFF00491A65 /* AppDelegate.swift */; };
 		6B8E5F141E48CEFF00491A65 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8E5F131E48CEFF00491A65 /* ViewController.swift */; };
 		6B8E5F171E48CEFF00491A65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B8E5F151E48CEFF00491A65 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* Begin PBXFileReference section */
 		584D56E32945620BB3FB5DC0 /* Pods-TextReader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextReader.release.xcconfig"; path = "Pods/Target Support Files/Pods-TextReader/Pods-TextReader.release.xcconfig"; sourceTree = "<group>"; };
 		6B7587361E4A06D000F63825 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		6B7587381E4A08A100F63825 /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
 		6B8E5F0E1E48CEFF00491A65 /* TextReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B8E5F111E48CEFF00491A65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6B8E5F131E48CEFF00491A65 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 				6B8E5F181E48CEFF00491A65 /* Assets.xcassets */,
 				6B8E5F1A1E48CEFF00491A65 /* LaunchScreen.storyboard */,
 				6B8E5F1D1E48CEFF00491A65 /* Info.plist */,
+				6B7587381E4A08A100F63825 /* tessdata */,
 			);
 			path = TextReader;
 			sourceTree = "<group>";
@@ -155,6 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B8E5F1C1E48CEFF00491A65 /* LaunchScreen.storyboard in Resources */,
+				6B7587391E4A08A100F63825 /* tessdata in Resources */,
 				6B8E5F191E48CEFF00491A65 /* Assets.xcassets in Resources */,
 				6B8E5F171E48CEFF00491A65 /* Main.storyboard in Resources */,
 			);
