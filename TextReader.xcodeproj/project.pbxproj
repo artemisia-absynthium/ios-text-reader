@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		6B7587371E4A06D000F63825 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B7587361E4A06D000F63825 /* AVFoundation.framework */; };
 		6B7587391E4A08A100F63825 /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 6B7587381E4A08A100F63825 /* tessdata */; };
+		6B75873B1E4A0A6900F63825 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B75873A1E4A0A6900F63825 /* libstdc++.6.0.9.tbd */; };
 		6B8E5F121E48CEFF00491A65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8E5F111E48CEFF00491A65 /* AppDelegate.swift */; };
 		6B8E5F141E48CEFF00491A65 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8E5F131E48CEFF00491A65 /* ViewController.swift */; };
 		6B8E5F171E48CEFF00491A65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B8E5F151E48CEFF00491A65 /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 		584D56E32945620BB3FB5DC0 /* Pods-TextReader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextReader.release.xcconfig"; path = "Pods/Target Support Files/Pods-TextReader/Pods-TextReader.release.xcconfig"; sourceTree = "<group>"; };
 		6B7587361E4A06D000F63825 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		6B7587381E4A08A100F63825 /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
+		6B75873A1E4A0A6900F63825 /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
 		6B8E5F0E1E48CEFF00491A65 /* TextReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B8E5F111E48CEFF00491A65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6B8E5F131E48CEFF00491A65 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -37,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B75873B1E4A0A6900F63825 /* libstdc++.6.0.9.tbd in Frameworks */,
 				6B7587371E4A06D000F63825 /* AVFoundation.framework in Frameworks */,
 				734DADCEDB8BC01C923796A7 /* Pods_TextReader.framework in Frameworks */,
 			);
@@ -57,6 +60,7 @@
 		16FDF4BE05A4FF1B40B6B2FD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6B75873A1E4A0A6900F63825 /* libstdc++.6.0.9.tbd */,
 				6B7587361E4A06D000F63825 /* AVFoundation.framework */,
 				D2AA9411C86EB9F72FB45552 /* Pods_TextReader.framework */,
 			);
