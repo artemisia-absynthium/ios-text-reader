@@ -12,9 +12,11 @@
 		6B8E5F171E48CEFF00491A65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B8E5F151E48CEFF00491A65 /* Main.storyboard */; };
 		6B8E5F191E48CEFF00491A65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B8E5F181E48CEFF00491A65 /* Assets.xcassets */; };
 		6B8E5F1C1E48CEFF00491A65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B8E5F1A1E48CEFF00491A65 /* LaunchScreen.storyboard */; };
+		734DADCEDB8BC01C923796A7 /* Pods_TextReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2AA9411C86EB9F72FB45552 /* Pods_TextReader.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		584D56E32945620BB3FB5DC0 /* Pods-TextReader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextReader.release.xcconfig"; path = "Pods/Target Support Files/Pods-TextReader/Pods-TextReader.release.xcconfig"; sourceTree = "<group>"; };
 		6B8E5F0E1E48CEFF00491A65 /* TextReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B8E5F111E48CEFF00491A65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6B8E5F131E48CEFF00491A65 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		6B8E5F181E48CEFF00491A65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6B8E5F1B1E48CEFF00491A65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6B8E5F1D1E48CEFF00491A65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7866AE50CB8720D5A809B51D /* Pods-TextReader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextReader.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TextReader/Pods-TextReader.debug.xcconfig"; sourceTree = "<group>"; };
+		D2AA9411C86EB9F72FB45552 /* Pods_TextReader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TextReader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				734DADCEDB8BC01C923796A7 /* Pods_TextReader.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E7E19D1B3B7981946F65F10 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7866AE50CB8720D5A809B51D /* Pods-TextReader.debug.xcconfig */,
+				584D56E32945620BB3FB5DC0 /* Pods-TextReader.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		16FDF4BE05A4FF1B40B6B2FD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D2AA9411C86EB9F72FB45552 /* Pods_TextReader.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6B8E5F051E48CEFF00491A65 = {
 			isa = PBXGroup;
 			children = (
 				6B8E5F101E48CEFF00491A65 /* TextReader */,
 				6B8E5F0F1E48CEFF00491A65 /* Products */,
+				0E7E19D1B3B7981946F65F10 /* Pods */,
+				16FDF4BE05A4FF1B40B6B2FD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6B8E5F201E48CEFF00491A65 /* Build configuration list for PBXNativeTarget "TextReader" */;
 			buildPhases = (
+				34E268D862C23A2A83298953 /* [CP] Check Pods Manifest.lock */,
 				6B8E5F0A1E48CEFF00491A65 /* Sources */,
 				6B8E5F0B1E48CEFF00491A65 /* Frameworks */,
 				6B8E5F0C1E48CEFF00491A65 /* Resources */,
+				E224A8CF8195FF483C4BEF64 /* [CP] Embed Pods Frameworks */,
+				270015AFC943AD80411684C2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		270015AFC943AD80411684C2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TextReader/Pods-TextReader-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		34E268D862C23A2A83298953 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E224A8CF8195FF483C4BEF64 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TextReader/Pods-TextReader-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6B8E5F0A1E48CEFF00491A65 /* Sources */ = {
@@ -258,8 +333,10 @@
 		};
 		6B8E5F211E48CEFF00491A65 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7866AE50CB8720D5A809B51D /* Pods-TextReader.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = TextReader/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pensosoftware.TextReader;
@@ -270,8 +347,10 @@
 		};
 		6B8E5F221E48CEFF00491A65 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 584D56E32945620BB3FB5DC0 /* Pods-TextReader.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = TextReader/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pensosoftware.TextReader;
@@ -299,6 +378,7 @@
 				6B8E5F221E48CEFF00491A65 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
