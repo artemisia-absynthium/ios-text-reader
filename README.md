@@ -30,7 +30,7 @@ By using both of them it's way more precise but slower too, so you may want to t
 fastest, to check whether it's enough to suit your needs. In order to change it, during Tesseract initialization 
 (`ViewController.swift`, rows 25-27) set `G8Tesseract.engineMode` to `.tesseractOnly`.
 
-If you find that's good for you, than you can delete all of the files in the `TextReader/tessdata` except for the ones called
+If you find that's good for you, then you can delete all of the files in the `TextReader/tessdata` except for the ones called
 `*.traineddata`, because the other files are used only by Cube. In this way you'll sensibly reduce your app size, too.
 
 ## Configuration
