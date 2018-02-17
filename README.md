@@ -1,5 +1,7 @@
 # iOS Text Reader
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/84eaff35f9f64cb080ad81d3118a4615)](https://app.codacy.com/app/artemisia-absynthium/ios-text-reader?utm_source=github.com&utm_medium=referral&utm_content=artemisia-absynthium/ios-text-reader&utm_campaign=badger)
+
 This iOS app uses [gali8/Tesseract-OCR-iOS](https://github.com/gali8/Tesseract-OCR-iOS) to recognize text from
 images taken from live camera preview.
 
