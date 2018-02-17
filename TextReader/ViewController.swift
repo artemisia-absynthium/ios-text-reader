@@ -11,12 +11,14 @@ import AVFoundation
 import TesseractOCR
 
 class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDelegate, G8TesseractDelegate {
+
     @IBOutlet var cameraPreview: UIView!
     @IBOutlet var recognizedText: UITextView!
-    
+
     let tesseract = G8Tesseract(language: "eng+ita")
     var recognizing = false
-    
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -33,9 +35,9 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+
     // MARK: Tesseract
-    
+
     func performRecognition(_ image: UIImage) -> String {
         tesseract?.image = image
         print("performRecognition - recognition start...")
@@ -45,16 +47,16 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
         print("text='" + (text == nil ? "nil" : text!) + "'")
         return text!
     }
-    
+
     func shouldCancelImageRecognition(for tesseract: G8Tesseract!) -> Bool {
-        return false; // return true if you need to interrupt tesseract before it finishes
+        return false // return true if you need to interrupt tesseract before it finishes
     }
 
     // MARK: Technical Q&A QA1702
     // How to capture video frames from the camera as images using AV Foundation on iOS
     // Original: https://developer.apple.com/library/ios/qa/qa1702/_index.html
     // Swift: https://gist.github.com/thatseeyou/caa8db15f39963dc1060
-    
+
     func setupCaptureSession() {
         let captureSession = AVCaptureSession()
         captureSession.sessionPreset = AVCaptureSessionPresetHigh
@@ -89,7 +91,7 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
         
         captureSession.startRunning()
     }
-    
+
     func captureOutput(_ captureOutput: AVCaptureOutput!, didOutputSampleBuffer sampleBuffer: CMSampleBuffer!, from connection: AVCaptureConnection!) {
         if recognizing {
             return
@@ -105,7 +107,7 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
         })
         recognizing = false
     }
-    
+
     func imageFromSampleBuffer(_ sampleBuffer: CMSampleBuffer!) -> UIImage {
         let imageBuffer:CVImageBuffer! = CMSampleBufferGetImageBuffer(sampleBuffer)
         
@@ -127,7 +129,8 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
         // Create an image object from the Quartz image
         let image = UIImage(cgImage: quartzImage!)
         
-        return (image);
+        return (image)
     }
-}
 
+
+}
