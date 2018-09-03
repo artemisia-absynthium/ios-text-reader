@@ -3,12 +3,18 @@
 [![Build Status](https://travis-ci.org/artemisia-absynthium/ios-text-reader.svg?branch=master)](https://travis-ci.org/artemisia-absynthium/ios-text-reader)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/84eaff35f9f64cb080ad81d3118a4615)](https://app.codacy.com/app/artemisia-absynthium/ios-text-reader?utm_source=github.com&utm_medium=referral&utm_content=artemisia-absynthium/ios-text-reader&utm_campaign=badger)
 
+# Project Archived
+
+Google released [ML Kit](https://developers.google.com/ml-kit/), a framework containing the [Mobile Vision](https://developers.google.com/vision/) APIs, with OCR among their features, making them finally available for iOS, too. I strongly suggest using it because it's very easy to use and well performing. That said I'm no longer maintaining this project, I'm archiving it so I can leave it here for future reference.
+
+---
+
 This iOS app uses [gali8/Tesseract-OCR-iOS](https://github.com/gali8/Tesseract-OCR-iOS) to recognize text from
 images taken from live camera preview.
 
 ## Setup
 
-This project uses [Cocoapods](https://cocoapods.org/), as a dependency manager, after checkout, run `pod install` 
+This project uses [Cocoapods](https://cocoapods.org/) as a dependency manager, after checkout, run `pod install`
 from inside the project folder.
 If you don't have Cocoapods installed, here's the [official reference](https://cocoapods.org/) to get you started.
 
